@@ -1,6 +1,16 @@
 Welcome to rapper ipsum! Click a rapper to get some random barz.
-
+<!--
 <% @rappers.each do |rapper| %>
   <p><%= rapper.name %>
     <%= link_to( rapper.name, rapper_path(rapper.id)) %>
-  <% end %>
+  <% end %> -->
+
+
+  <%= form_tag do %>
+<%= select(:rapper, :id, Rapper.all.collect {|model| [model.name, model.id]}) %>
+<br>
+<%= label_tag(:paras, "Number of Paragraphs") %>
+<%= text_field_tag(:paras) %>
+<br>
+ <%= submit_tag("Search") %>
+<% end %>

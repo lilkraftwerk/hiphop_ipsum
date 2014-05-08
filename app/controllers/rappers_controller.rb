@@ -16,8 +16,9 @@ class RappersController < ApplicationController
   end
 
   def create
-    @rapper = Rapper.new(rapper_params)
-    @rapper.save
+    @rapper = Rapper.find(params[:rapper][:id])
+    @ipsum = @rapper.ipsum(params[:paras])
+    render :show
   end
 
   private

@@ -10,9 +10,9 @@ class Rapper < ActiveRecord::Base
     end
   end
 
-  def ipsum
+  def ipsum(number_of_paras)
     ipsum = IpsumText.new(self)
-    ipsum.generate_paragraphs
+    ipsum.generate_paragraphs(number_of_paras)
   end
 
 end

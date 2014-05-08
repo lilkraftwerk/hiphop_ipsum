@@ -4,10 +4,10 @@ def initialize(rapper)
   @rapper = rapper
 end
 
-def generate_paragraphs
+def generate_paragraphs(number_of_paras)
   @lines = @rapper.lines
   all_paras = []
-  5.times do
+  number_of_paras.to_i.times do
     all_paras << make_paragraph
   end
   all_paras
