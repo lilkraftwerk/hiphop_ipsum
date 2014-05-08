@@ -8,6 +8,8 @@ gem 'pg'
 
 gem 'rapgenius'
 
+gem 'sextant'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 

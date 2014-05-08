@@ -1,0 +1,6 @@
+Welcome to rapper ipsum! Click a rapper to get some random barz.
+
+<% @rappers.each do |rapper| %>
+  <p><%= rapper.name %>
+    <%= link_to( rapper.name, rapper_path(rapper.id)) %>
+  <% end %>
