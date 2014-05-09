@@ -27,7 +27,7 @@ function getLyrics(rapper, numSentences, numParagraphs) {
 $(document).ready(function() {
 
   $("#owl-example").owlCarousel({
-    items: 10,
+    items: 22,
     singleItem: true,
     navigation : true,
     navigationText : ["prev","next"],
