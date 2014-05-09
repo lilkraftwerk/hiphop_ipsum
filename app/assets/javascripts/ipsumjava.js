@@ -5,6 +5,20 @@ $(document).on("click", "#get-lyrics", function(){
   getLyrics(rapper, numSentences, numParagraphs)
 });
 
+
+$(document).on("change", "#rapper_id", function(){
+  moveToSelectedRapper()
+});
+
+
+$('#rapper_id').on('change', function() {
+  alert( this.value ); // or $(this).val()
+});
+
+$( "#rapper_id" ).select(function() {
+  alert( "Handler for .select() called." );
+});
+
 function formatLyrics(lyrics){
     return lyrics.join("<p>")
 }
@@ -34,6 +48,18 @@ $(document).ready(function() {
     rewindNav : true,
     pagination : true,
     paginationNumbers: false,
+    addClassActive: true,
+    afterMove: getSelectedRapper,
   });
 
+  owl = $("#owl-example").data('owlCarousel');
+
 });
+
+function getSelectedRapper(){
+  console.log(this.owl.currentItem + 1)
+}
+
+function moveToSelectedRapper(){
+  owl.goTo($('#rapper_id').val() -1)  // Go to x slide
+}
