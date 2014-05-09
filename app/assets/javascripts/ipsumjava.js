@@ -50,11 +50,18 @@ $(document).ready(function() {
     paginationNumbers: false,
     addClassActive: true,
     afterMove: getSelectedRapper,
+    afterMove: changeDropdown
   });
 
   owl = $("#owl-example").data('owlCarousel');
 
 });
+
+function changeDropdown(){
+  item = this.owl.currentItem
+  item = item + 1
+  $("#rapper_id").val(item);
+}
 
 function getSelectedRapper(){
   console.log(this.owl.currentItem + 1)
