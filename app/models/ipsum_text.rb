@@ -28,7 +28,7 @@ end
 
 def make_paragraph
   this_para = []
-  15.times do
+  @sentences.times do
     this_para << add_period(@lines.sample.content)
   end
   this_para.join(" ")
