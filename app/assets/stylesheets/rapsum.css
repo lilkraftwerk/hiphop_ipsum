@@ -1,7 +1,18 @@
 #lyrics {
-  width: 80%;
+  width: 95%;
   margin: 5%;
   border: 3px solid black;
   padding: 20px;
   background-color: pink;
+}
+
+body {
+  background: url('/assets/sativa.png');
+}
+
+#header {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4em;
+  font-style: italic;
 }
