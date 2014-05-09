@@ -6,15 +6,36 @@
   font-size: 1em;
   background: url('/assets/sativa.png');
   font-family: 'Oswald', sans-serif;
-
 }
+
 
 #header {
   text-align: center;
- font-family: 'Kaushan Script', cursive;
+ font-family: 'Pacifico', cursive;
   font-size: 4em;
   font-style: italic;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 25%;
+  text-align: center;
+  line-height: 2;
+  height: 2em;
+  margin: 3px;
+  font-size: 3em;
+}
+
+#buttons {
+  margin-top: 10px;
+}
+
+button {
+  height: 50px;
+  border: 3px solid black;
 }
 
 select {
@@ -31,12 +52,21 @@ select {
     width: 300px;
   }
 
-  .rapper-headshot img{
+  #controls {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .rapper-headshot {
   width: 200px;
-  height: 200px;
+  height: 100px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
+  margin: 0px auto;
   border: 3px solid black;
   }
 
+.wrapper {
+  width: 100%;
+}
