@@ -46,8 +46,10 @@ $(document).ready(function() {
     navigation : true,
     navigationText : ["prev","next"],
     rewindNav : true,
-    pagination : true,
-    paginationNumbers: false,
+    pagination : false,
+    slideSpeed: 0,
+    paginationSpeed: 0,
+    paginationNumbers: true,
     addClassActive: true,
     afterMove: getSelectedRapper,
     afterMove: changeDropdown
