@@ -1,10 +1,10 @@
 #lyrics {
   width: 100%;
   margin: 5%;
-  border: 3px solid black;
   padding: 20px;
-  font-size: 1em;
-  background: url('/assets/sativa.png');
+  font-size: 1.2em;
+  border: 2px solid black;
+  border-radius: 10px;
   font-family: 'Oswald', sans-serif;
 }
 

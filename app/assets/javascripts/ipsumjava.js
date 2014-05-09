@@ -14,8 +14,8 @@ function updateLyricsBox() {
 $(document).on("click", "#random-two", function() {
     randomRapper = Math.floor((Math.random() * 22) + 1);
     rapper = $("#rapper_id").val(randomRapper)
-    $("#paragraphs").val(2)
-    $("#sentences").val(10)
+    $("#paragraphs").val(1)
+    $("#sentences").val(8)
     updateLyricsBox();
     moveToSelectedRapper()
 });
