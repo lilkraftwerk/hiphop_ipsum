@@ -18,8 +18,6 @@
             <div class="pure-u-1-4">
 
 
-  <%= form_tag do %><%= select(:rapper, :id, Rapper.all.collect {|model| [model.name, model.id]}, :id=>"rapper") %>
-                <% end %>
 
                 <div id="owl-example" class="owl-carousel">
                     <% @rappers.each do |rapper| %>
@@ -29,7 +27,12 @@
 
             </div>
             <div class="pure-u-1-4" id="controls">
+
+  <%= form_tag do %><%= select(:rapper, :id, Rapper.all.collect {|model| [model.name, model.id]}, :id=>"rapper") %>
+                <% end %>
+                <br>
                 <%= form_tag do %>
+
                 <%= number_field_tag("paras", 3, :id=>"paragraphs") %><br> <%= label_tag(:paras, "Paragraphs") %><br>
                 <%= number_field_tag("sentences", 3, :id=>"sentences") %><br> <%= label_tag(:sentences, "Bars Per Paragraph") %> <% end %> <div id="buttons"><button id="get-lyrics">Get Bars</button> <button id="random-two">I'm Feeling Lucky</button></div>
             </div>
