@@ -16,3 +16,18 @@ body {
   font-size: 4em;
   font-style: italic;
 }
+
+select {
+   background-color: pink;
+   width: 268px;
+   padding: 5px;
+   font-size: 30px;
+   line-height: 1;
+   border: 1px solid black;
+   border-radius: 0;
+   height: 50px;
+   }
+
+   textbox {
+    border: 1px solid black;
+   }

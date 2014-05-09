@@ -1,7 +1,7 @@
 $(document).on("click", "#get-lyrics", function(){
   rapper = $("#rapper_id").val()
-  numSentences = $("#paragraphs").val()
-  numParagraphs = $("#sentences").val()
+  numParagraphs = $("#paragraphs").val()
+  numSentences = $("#sentences").val()
   getLyrics(rapper, numSentences, numParagraphs)
 });
 
@@ -24,3 +24,16 @@ function getLyrics(rapper, numSentences, numParagraphs) {
   })
 }
 
+$(document).ready(function() {
+
+  $("#owl-example").owlCarousel({
+    items: 10,
+    singleItem: true,
+    navigation : true,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    pagination : true,
+    paginationNumbers: false,
+  });
+
+});
