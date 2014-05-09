@@ -21,6 +21,9 @@ class RappersController < ApplicationController
     render :show
   end
 
+  def get_ipsum
+  end
+
   private
 
   def rapper_params
