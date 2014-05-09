@@ -1,18 +1,25 @@
 $(document).on("click", "#get-lyrics", function(){
+  rapper = $("")
   getLyrics(1, 2)
 });
 
+function formatLyrics(lyrics){
+    return lyrics.join("<p>")
+}
 
 function putLyrics(lyrics) {
-  $('#lyrics').text(lyrics)
+  $('#lyrics').html(formatLyrics(lyrics))
 }
 
 function getLyrics(numSentences, numParagraphs) {
+  rapperData = {id: 6, paras: 5, sentences: 5}
+  console.log(rapperData)
   $.ajax({
     url: '/ipsum',
-    data: {id: 1, paras: 3, sentences: 5},
+    data: rapperData,
     type: 'GET'
   }).done(function(lyrics){
+    console.log(lyrics)
     putLyrics(lyrics);
   })
 }

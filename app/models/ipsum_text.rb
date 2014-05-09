@@ -1,7 +1,14 @@
 class IpsumText
 
-def initialize(rapper)
-  @rapper = rapper
+def initialize(params)
+  @rapper = Rapper.find(params[:id])
+  @paragraphs = params[:paras].to_i
+  @sentences = params[:sentences].to_i
+
+end
+
+def get_ipsum
+  generate_paragraphs(@paragraphs)
 end
 
 def generate_paragraphs(number_of_paras)
@@ -10,7 +17,7 @@ def generate_paragraphs(number_of_paras)
   number_of_paras.to_i.times do
     all_paras << make_paragraph
   end
-  all_paras
+  all_paras.to_json
 end
 
 def add_period(line)
@@ -24,7 +31,7 @@ def make_paragraph
   15.times do
     this_para << add_period(@lines.sample.content)
   end
-  this_para
+  this_para.join(" ")
 end
 
 end
