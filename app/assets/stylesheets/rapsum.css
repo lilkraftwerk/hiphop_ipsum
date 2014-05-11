@@ -1,115 +1,102 @@
 #lyrics {
-  width: 100%;
-  margin: 5%;
-  padding: 20px;
-  font-size: 1.2em;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-family: 'Oswald', sans-serif;
+width:100%;
+margin:5%;
+padding:20px;
+font-size:1.2em;
+border:2px solid #000;
+border-radius:10px;
+font-family:'Oswald',sans-serif
 }
 
-.rapper-wrapper {
-}
-
-#headshot-box{
-  width: 100%;
+#headshot-box {
+width:100%
 }
 
 #header {
-  text-align: center;
- font-family: 'Pacifico', cursive;
-  font-size: 4em;
-  font-style: italic;
-  margin-top: 3px;
-  margin-bottom: 20px;
+text-align:center;
+font-family:'Pacifico',cursive;
+font-size:4em;
+font-style:italic;
+margin-top:3px;
+margin-bottom:20px
 }
 
 input {
-  width: 50%;
-  border-radius: 10px;
-  margin-left: 25%;
-  text-align: center;
-  line-height: 10;
-  height: 2em;
-  margin: 3px;
-  font-size: 3em;
+width:50%;
+border-radius:10px;
+text-align:center;
+line-height:10;
+height:2em;
+margin:3px;
+font-size:3em
 }
 
 #buttons {
-  margin-top: 10px;
-  font-family: 'Oswald', sans-serif;
+margin-top:10px;
+font-family:'Oswald',sans-serif
 }
 
 button {
-  height: 50px;
-  border: 3px solid black;
-
-  font-family: 'Oswald', sans-serif;
-
+height:50px;
+border:3px solid #000;
+font-family:'Oswald',sans-serif
 }
 
-#get-lyrics{
-  font-family: 'Oswald', sans-serif;
-
+#get-lyrics {
+font-family:'Oswald',sans-serif
 }
 
 #footer {
-  margin-top: 20px;
-  text-align: center !important;
-  font-family: 'Oswald', sans-serif;
+margin-top:20px;
+text-align:center!important;
+font-family:'Oswald',sans-serif
 }
 
-#random-two{
-  font-family: 'Oswald', sans-serif;
+#random-two {
+font-family:'Oswald',sans-serif
 }
 
 #rapper {
-  font-family: 'Oswald', sans-serif;
-
+font-family:'Oswald',sans-serif
 }
 
 select {
-   width: 268px;
-   padding: 5px;
-   font-size: 30px;
-   line-height: 3;
-   border: 1px solid black;
-   border-radius: 0;
-   height: 50px;
- font-family: 'Pacifico', cursive;
-  text-indent: 25%;
-   }
+width:268px;
+padding:5px;
+font-size:30px;
+line-height:3;
+border:1px solid #000;
+border-radius:0;
+height:50px;
+font-family:'Pacifico',cursive;
+text-indent:25%
+}
 
-  .rapper-headshot {
-    width: 300px;
-  }
+.rapper-headshot {
+width:300px
+}
 
-  #controls {
-    text-align: center;
-    height: 30%;
-  font-family: 'Oswald', sans-serif;
+#controls {
+text-align:center;
+height:30%;
+font-family:'Oswald',sans-serif
+}
 
-  }
-
-  .rapper-headshot {
-  width: 200px;
-  height: 100px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  border: 3px solid black;
-  margin: 0px auto;
-  display: block;
-  }
+.rapper-headshot {
+width:200px;
+height:100px;
+border-radius:150px;
+-webkit-border-radius:150px;
+-moz-border-radius:150px;
+border:3px solid #000;
+margin:0 auto;
+display:block
+}
 
 .wrapper {
-  width: 100%;
+width:100%
 }
 
-#hidden-rappers{
-  display:none;
-}
-
-.owl-item {
-  border 3px solid pink;
+#hidden-rappers {
+display:none
 }
