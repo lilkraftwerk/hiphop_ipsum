@@ -53,6 +53,12 @@ button {
 
 }
 
+#footer {
+  margin-top: 20px;
+  text-align: center !important;
+  font-family: 'Oswald', sans-serif;
+}
+
 #random-two{
   font-family: 'Oswald', sans-serif;
 }
