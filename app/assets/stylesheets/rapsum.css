@@ -8,6 +8,12 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.rapper-wrapper {
+}
+
+#headshot-box{
+  width: 100%;
+}
 
 #header {
   text-align: center;
@@ -31,21 +37,41 @@ input {
 
 #buttons {
   margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
 }
 
 button {
   height: 50px;
   border: 3px solid black;
+
+  font-family: 'Oswald', sans-serif;
+
+}
+
+#get-lyrics{
+  font-family: 'Oswald', sans-serif;
+
+}
+
+#random-two{
+  font-family: 'Oswald', sans-serif;
+}
+
+#rapper {
+  font-family: 'Oswald', sans-serif;
+
 }
 
 select {
    width: 268px;
    padding: 5px;
    font-size: 30px;
-   line-height: 1;
+   line-height: 3;
    border: 1px solid black;
    border-radius: 0;
    height: 50px;
+ font-family: 'Pacifico', cursive;
+  text-indent: 25%;
    }
 
   .rapper-headshot {
@@ -55,6 +81,8 @@ select {
   #controls {
     text-align: center;
     height: 30%;
+  font-family: 'Oswald', sans-serif;
+
   }
 
   .rapper-headshot {
@@ -63,10 +91,19 @@ select {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  margin: 0px auto;
   border: 3px solid black;
+  margin: 0px auto;
+  display: block;
   }
 
 .wrapper {
   width: 100%;
+}
+
+#hidden-rappers{
+  display:none;
+}
+
+.owl-item {
+  border 3px solid pink;
 }

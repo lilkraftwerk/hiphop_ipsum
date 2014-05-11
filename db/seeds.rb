@@ -1,18 +1,7 @@
 
-rappers = ["50 Cent", "A Tribe Called Quest", "Beastie Boys", "Chief Keef", "DMX", "Danny Brown", "Dr. Dre", "Gang Starr", "Ghostface", "Juvenile", "Kanye West", "Lil B", "Lil Wayne", "MF Doom", "Notorious B.I.G.", "Outkast", "Slick Rick", "Trick Daddy", "UGK", "Wu-Tang Clan", "Young Jeezy"]
-
-def generate_filename(rapper_name)
-  filename = rapper_name.gsub(/\W/, "")
-  "#{filename.downcase}.jpg"
-end
-
-rappers.each {|rapper| Rapper.create(name: rapper, filename: generate_filename(rapper))}
+RAPPERS = ["50 Cent", "A Tribe Called Quest", "Beastie Boys", "Chief Keef", "DMX", "Danny Brown", "Dr. Dre", "Gang Starr", "Ghostface", "Juvenile", "Kanye West", "Lil B", "Lil Wayne", "MF Doom", "Notorious B.I.G.", "Outkast", "Slick Rick", "Trick Daddy", "UGK", "Wu-Tang Clan", "Jeezy", "Three 6 Mafia", "Gucci Mane"].sort
 
 
+# RAPPERS.each {|rapper_name| RapperConstructor.new(rapper_name)}
 
-Rapper.all.each do |current_rapper|
-  puts current_rapper.name
-  puts current_rapper.filename
-  current_rapper.get_lines
-  puts "count for #{current_rapper.name}: #{current_rapper.lines.count}"
-end
+RapperConstructor.new(RAPPERS.sample)

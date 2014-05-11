@@ -11,30 +11,19 @@
                 </div>
             </div>
             <div class="pure-u-1-4"></div>
+            <div class="pure-u-1-4"></div>
             <div class="pure-u-1-4">
-
-
-            </div>
-            <div class="pure-u-1-4">
-
-
-
-                <div id="owl-example" class="owl-carousel">
-                    <% @rappers.each do |rapper| %>
-                        <%= image_tag("rappers/#{rapper.filename}", value: rapper.id, :class=>"rapper-headshot") %>
-                    <% end %>
-                </div>
-
+                <div id="headshot-box"></div>
             </div>
             <div class="pure-u-1-4" id="controls">
-
-  <%= form_tag do %><%= select(:rapper, :id, Rapper.all.collect {|model| [model.name, model.id]}, :id=>"rapper") %>
-                <% end %>
-                <br>
-                <%= form_tag do %>
-
-                <%= number_field_tag("paras", 1, :id=>"paragraphs") %><br> <%= label_tag(:paras, "Paragraphs") %><br>
-                <%= number_field_tag("sentences", 8, :id=>"sentences") %><br> <%= label_tag(:sentences, "Bars Per Paragraph") %> <% end %> <div id="buttons"><button id="get-lyrics">Get Bars</button> <button id="random-two">Randomize Rapper</button></div>
+                <%= form_tag do %><%= select(:rapper, :id, Rapper.all.collect {|model| [model.name, model.id]}, :id=>"rapper") %><% end %><br>
+                <%= form_tag do %> <%= number_field_tag("paras", 1, :id=>"paragraphs") %><br>
+                <%= label_tag(:paras, "Verses") %><br>
+                <%= number_field_tag("sentences", 8, :id=>"sentences") %><br>
+                <%= label_tag(:sentences, "Bars Per Verse") %> <% end %>
+                <div id="buttons">
+                    <button id="get-lyrics">Get Bars</button> <button id="random-two">I'm Feeling Lucky</button>
+                </div>
             </div>
             <div class="pure-u-1-4"></div>
             <div class="pure-u-1-4"></div>
@@ -42,6 +31,12 @@
                 <div id="lyrics"></div>
             </div>
             <div class="pure-u-1-4"></div>
+            <div id="hidden-rappers">
+                <% @rappers.each do |rapper| %>
+                <div class="rapper-wrapper" id="<%= rapper.id %>">
+                    <%= image_tag("rappers/#{rapper.filename}", value: rapper.filename, :class=>"rapper-headshot") %>
+                </div><% end %>
+            </div>
         </div>
     </body>
 </html>
