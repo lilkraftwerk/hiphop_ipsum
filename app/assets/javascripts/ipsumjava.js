@@ -37,6 +37,7 @@ function putLyrics(lyrics) {
 }
 
 function getLyrics(rapper, numSentences, numParagraphs) {
+    randomJargon()
     rapperData = {
         id: rapper,
         paras: numParagraphs,
@@ -58,4 +59,12 @@ $(document).ready(function() {
 
 function changeRapperPicture(rapperId) {
     $('#headshot-box').html($("#" + rapperId).html())
+}
+
+function randomJargon() {
+    var rapJargon = [
+        "Reticulating splines...", "Diggin' in the crates...", "Turning up...", "Rendering bars...", "Bleeping and blooping...", "Rendering the RapZone...", "Formatting lyrical prowess...", "Receiving packets from BasedWorld...", "Going SSJ like Goku...", "Rollin' and scratchin'...", "Keepin' it moving..."
+    ]
+    jargonNumber = Math.floor((Math.random() * rapJargon.length))
+    $("#lyrics").html(rapJargon[jargonNumber])
 }
